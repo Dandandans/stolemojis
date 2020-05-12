@@ -23,6 +23,6 @@ fs.readdir(DIR, (err, files) => {
     if (err) {
       console.error(err);
     }
-    console.log('Let me tell you, champion, you did it. ');
+    console.log('Let me tell you, champion, you did it.');
   });
 });
