@@ -1,5 +1,6 @@
+
   # stolemoji
-  Slackmojis never die. Only people die. caca
+  Slackmojis never die. Only people die.
   
 ![aliens.jpg](/stolemoji/aliens.jpg)
 ![alpaca-derp.png](/stolemoji/alpaca-derp.png)
