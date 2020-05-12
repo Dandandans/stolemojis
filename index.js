@@ -4,7 +4,7 @@ const DIR = 'stolemoji/';
 
 let preamble = `
   # stolemoji
-  Slackmojis never die. Only people die.
+  Stolemojis never die. Only people die.
   
 `;
 
