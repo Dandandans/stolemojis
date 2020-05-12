@@ -1,9 +1,6 @@
 const fs = require('fs');
 
 const DIR = 'stolemoji/';
-// function notBlocked(filename) {
-//   return !EXCLUDE.includes(filename);
-// }
 
 let preamble = `
   # stolemoji
@@ -23,6 +20,6 @@ fs.readdir(DIR, (err, files) => {
       return console.error(err);
     }
 
-    console.log('The readme was saved!');
+    console.log('Let me tell you, champion, you did it. ');
   });
 });
