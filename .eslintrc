@@ -1,0 +1,56 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 100,
+        "ignoreUrls": true,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "generator-star-spacing": 0,
+    "comma-dangle": ["warn", "always-multiline"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "object-curly-spacing": 0,
+    "no-confusing-arrow": 0,
+    "no-mixed-operators": 0,
+    "no-console": 1,
+    "no-trailing-spaces": 0,
+    "no-cond-assign": 0,
+    "dot-notation": 1,
+    "arrow-parens": ["warn", "always"],
+    "class-methods-use-this": 0,
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true
+      }
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": "warn",
+    "import/no-named-as-default": 0,
+    "ava/no-ignored-test-files": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
