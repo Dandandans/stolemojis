@@ -9,6 +9,9 @@ let preamble = `
 `;
 
 fs.readdir(DIR, (err, files) => {
+  if (err) {
+    console.log(err);
+  }
   files
     .filter((file) => !/(^|\/)\.[^/.]/g.test(file))
     .sort()
@@ -18,9 +21,8 @@ fs.readdir(DIR, (err, files) => {
 
   fs.writeFile('./README.md', preamble, (err) => {
     if (err) {
-      return console.error(err);
+      console.error(err);
     }
-
     console.log('Let me tell you, champion, you did it. ');
   });
 });
