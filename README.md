@@ -1,4 +1,3 @@
-
   # stolemoji
   Slackmojis never die. Only people die.
   
