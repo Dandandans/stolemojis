@@ -194,6 +194,7 @@
 ![troll.png](/stolemoji/troll.png)
 ![trump-hair.png](/stolemoji/trump-hair.png)
 ![tube-man.gif](/stolemoji/tube-man.gif)
+![verified.png](/stolemoji/verified.png)
 ![vogue.gif](/stolemoji/vogue.gif)
 ![waaa.png](/stolemoji/waaa.png)
 ![waluigi.png](/stolemoji/waluigi.png)
