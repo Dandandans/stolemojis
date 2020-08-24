@@ -16,7 +16,7 @@ fs.readdir(DIR, (err, files) => {
     .filter((file) => !/(^|\/)\.[^/.]/g.test(file))
     .sort()
     .forEach((file) => {
-      preamble += `<img src="stolemoji/${file}" height="128" width="128" title="${file}" alt="${file}" hspace="20" vspace="20"/>`;
+      preamble += `<img src="stolemoji/${file}" height="128" width="128" title="${file}" alt="${file}" hspace="15" />`;
     });
 
   fs.writeFile('./README.md', preamble, (err) => {
