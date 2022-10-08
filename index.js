@@ -12,7 +12,6 @@ fs.readdir(DIR, (err, files) => {
   if (err) {
     console.log(err);
   }
-  console.log(files)
   files
     .filter((file) => !/(^|\/)\.[^/.]/g.test(file))
     .sort()
