@@ -1,6 +1,9 @@
 name: Build
 on: push
 
+permissions:
+  contents: write
+
 jobs:
   run:
     name: Build README
@@ -8,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -42,9 +47,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Add & Commit
-        uses: EndBug/add-and-commit@v4.4.0
+        uses: EndBug/add-and-commit@v9
         with:
           message: 'docs: Update README.md'
           add: 'README.md'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          default_author: github_actions
